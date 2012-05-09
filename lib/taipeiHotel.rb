@@ -13,9 +13,28 @@ module TaipeiHotel
    # result.each do |p|
    # p p["travelName"]
    # end
+
   end
-  def rest
+  def list
     res=self.connect()
   end
-    module_function :rest
+  def detail(_num)
+
+  end
+  def mergelist
+   l=list()
+   l.each do |x|
+    _id=x["travelId"]
+    p _id
+    @endpoint="http://www.api.cloud.taipei.gov.tw/CSCP_API/etm/trv/rows/#{_id}"
+    res=self.connect()
+    p res.inspect
+    return
+  end
+
+  end
+    module_function :list
+    module_function :detail
+    module_function :mergelist
 end
+TaipeiHotel.mergelist()
