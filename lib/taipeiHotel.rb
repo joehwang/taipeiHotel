@@ -41,7 +41,7 @@ module TaipeiHotel
     module_function :detail
     module_function :import2DB
 end
-#_dbobj include column 
+#_dbobj must have follow column 
 # t.string   "travelId"
 # t.string   "travelName"
 # t.text     "description"
