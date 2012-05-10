@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["joehwang"]
   s.email       = ["joehwang.com@gmail.com"]
   s.homepage    = ""
-s.summary = %q{ one-line summary of your gemasdfasdfadfasfd sadfskfdjk sdfjklsdf }
-s.description = %q{ aadfasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdfasdfasdfasfd }
+s.summary = %q{ The ruby gem adapter Hotel location api of Taipei City Government. }
+s.description = %q{ The ruby gem adapter Hotel location api of Taipei City Government. }
   s.rubyforge_project = "taipeiHotel"
 
   s.files         = `git ls-files`.split("\n")
