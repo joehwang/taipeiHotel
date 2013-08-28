@@ -1,34 +1,39 @@
 taipeiHotel
 ===========
 
-The ruby gem adapter Hotel location api of Taipei City Government.
+The ruby gem adapter Hotel location api from Taipei City Government.
 
 ##Installtiona##
 
-> gem install taipeiHotel
+`gem install taipeiHotel`
 
 ##Useage##
 
->  *TaipeiHotel.list* #get all Hotel index and name
+`require 'taipeiHotel'`
 
->  *TaipeiHotel.detail(_hotelID)* #get hotel detail
+#### get all Hotel index and name
+`TaipeiHotel.list` 
+#### get hotel detail
+`TaipeiHotel.detail(_hotelID)` 
 
->  *TaipeiHotel.import2DB(_Your model)* #write all taipei hotel data in your model
->
->>Your model must have follow column.
 
->> t.string   "travelId"
+#### write all taipei hotel data in your model
+`aipeiHotel.import2DB(_Your model)`  
 
->> t.string   "travelName"
+>Your model must have follow column.
 
->> t.text     "description"
+> `t.string   "travelId"`
 
->> t.string   "address"
+> `t.string   "travelName"`
 
->> t.string   "lat"
+> `t.text     "description"`
 
->> t.string   "lng"
+> `t.string   "address"`
 
->> t.string   "imgURL"
+> `t.string   "lat"`
 
->> t.string   "pb_organization"
+> `t.string   "lng"`
+
+> `t.string   "imgURL"`
+
+> `t.string   "pb_organization"`
